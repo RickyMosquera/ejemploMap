@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientes>
+  <key id="33" />
+  <cliente nombre="Carlos" idCliente="1140" empresa="Campo" />
+  <cliente nombre="Antonio" idCliente="1131" empresa="Casa" />
+  <cliente nombre="Alejandro" idCliente="1122" empresa="Emcali" />
+  <cliente nombre="Orlando" idCliente="1133" empresa="Javeriana" />
+  <key id="3" />
+  <cliente nombre="Ricky" idCliente="1140" empresa="UAO" />
+  <cliente nombre="Sofia" idCliente="1131" empresa="Tigo" />
+  <cliente nombre="Marco" idCliente="1122" empresa="Sura" />
+  <cliente nombre="David" idCliente="1133" empresa="herbalife" />
+</clientes>

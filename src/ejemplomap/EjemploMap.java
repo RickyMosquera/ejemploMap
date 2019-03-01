@@ -11,7 +11,9 @@ import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.TreeMap;
+import javax.swing.JOptionPane;
 import modelo.Cliente;
+import modelo.FileXML;
 
 /**
  *
@@ -41,7 +43,7 @@ public class EjemploMap {
         listaC2.add(new Cliente("Alejandro", "1122", "Emcali"));
         listaC2.add(new Cliente("Orlando", "1133", "Javeriana"));
         
-        map1.put(3, listaC2);
+        map1.put(33, listaC2);
 
         Map<Integer,Cliente> map2 = new LinkedHashMap<>();
         Map<Integer,Cliente> map3 = new TreeMap<>();
@@ -50,7 +52,7 @@ public class EjemploMap {
 //        map1.put(4, new Cliente("Sofia", "1131", "Tigo"));
 //        map1.put(78, new Cliente("Marco", "1122", "Sura"));
 //        map1.put(5, new Cliente("David", "1133", "herbalife"));
-        
+//        
 //        map2.put(55, new Cliente("Ricky", "1140", "UAO"));
 //        map2.put(4, new Cliente("Sofia", "1131", "Tigo"));
 //        map2.put(78, new Cliente("Marco", "1122", "Sura"));
@@ -70,6 +72,11 @@ public class EjemploMap {
 //        System.out.println("____________________");
 //        System.out.println(m3);
 //        System.out.println("____________________");
+
+boolean t =FileXML.crearArchivoXML(map1);
+if (t){
+    JOptionPane.showMessageDialog(null, "Archivo creado con exito");
+}
     }
     
     public static String mostrarDatosMap(Map<Integer,LinkedList<Cliente>>m){
